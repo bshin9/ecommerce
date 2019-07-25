@@ -1,0 +1,92 @@
+body, html {
+    height: 100%;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #40C575;
+    border-bottom: 1px solid #dedede;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #FF7900;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+/* Header */
+
+#header {
+    background: url(img/conorwalk.jpg) center center no-repeat;
+    background-size: cover;
+    height: 85%;
+    color: #484848;
+    display: flex;
+    align-items: center;
+}
+
+#header img {
+    padding: 0 0 20px 0;
+    width: 80%;
+}
+
+/* Product */
+
+#products {
+    padding: 5rem 0;
+}
+
+#products .work-img {
+    position: relative;
+}
+
+#products .work-img .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/eye.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+#products .work-img .img-overlay:hover {
+    opacity: 1;
+    z-index: 1;
+}
+
+.strong {
+    
+    font-size: 30px;
+    text-emphasis: bold;
+}
+
+/* Footer */
+
+#footer {
+    padding: 2rem 0;
+    background: #484848;
+    color: white;
+}
+
+#footer a {
+    color: #bbee55;
+}
+
+#footer .fa {
+    padding: 0 3px;
+}

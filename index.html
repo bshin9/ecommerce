@@ -1,20 +1,358 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Proper Watch</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700&display=swap" rel="stylesheet">
+</head>
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+<body>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  </body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar">
+      <span class="navbar-toggler-icon">&#9776</span>
+    </button>
+
+    <a class="navbar-brand" href="a"><img src="img/logo.jpg" width="50px" height="50px" class="img-fluid"></a>
+    <div class="collapse navbar-collapse" id="navigation-bar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#header">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="#who">WHO</a></li>
+        <li class="nav-item"><a class="nav-link" href="#why">WHY</a></li>
+        <li class="nav-item"><a class="nav-link" href="product.html">PRODUCTS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">CONTACTS</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section id="header">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-6 header-right hidden-sm-down">
+          <h2>WELCOME TO PROPER WATCH!</h2>
+          <p class="lead">Proper Watch is where you can find a variety of classy and stylistic watches ranging from all
+            different
+            price ranges. We will make sure that you get all the information you need to make an informed decision
+            before you buy anything. Sign up today to get free emails from us that will update your catalogue as newer
+            watches are released!</p>
+          <form>
+            <fieldset class="form-group">
+              <label class="sr-only">name</label>
+              <input type="text" class="form-control" placeholder="Your Name">
+            </fieldset>
+            <fieldset class="form-group">
+              <label class="sr-only">name</label>
+              <input type="email" class="form-control" placeholder="Your Email">
+            </fieldset>
+            <button type="submit" class="btn btn-outline-info btn-block">Yes, I Want Free Updates!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Slide -->
+
+  <section id="customers">
+    <div class="container text-center">
+      <div class="row">
+
+        <div class="col">
+          <h2>A Few Proper Collection</h2>
+          <hr width="30%">
+          <p>Collector's Edition</p>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col">
+          <div id="quotes" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#quotes" data-slide-to="0" class="active"></li>
+              <li data-target="#quotes" data-slide-to="1"></li>
+              <li data-target="#quotes" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <blockquote class="blockquote">
+                  <img src="img/rolex.jpg" class="watchSlide">
+                  <footer class="blockquote-footer">Conor McGregor loves this edition of the rolex
+                  </footer>
+                  <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                      class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                      class="fa fa-star" aria-hidden="true"></i><br> Rolex Men's Submariner Automatic Blue Dial Oyster
+                    18k Solid Gold $30,000</p>
+                </blockquote>
+              </div>
+              <div class="carousel-item">
+                <blockquote class="blockquote">
+                  <img src="img/citizen.jpg" class="watchSlide">
+                  <footer class="blockquote-footer">Proudly supported and worn by UFC commentator Joe Rogan
+                  </footer>
+                  <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                      class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                      class="fa fa-star" aria-hidden="true"></i><br> Citizen Men's Eco-Drive Stainless Steel Watch $250
+                  </p>
+                </blockquote>
+              </div>
+              <div class="carousel-item">
+                <blockquote class="blockquote">
+                  <img src="img/bulova.jpg" class="watchSlide">
+                  <footer class="blockquote-footer">Eminem says be humble and stay classy with this watch
+                  </footer>
+                  <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                      class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                      class="fa fa-star" aria-hidden="true"></i><br> BULOVA MEN'S CLASSIC AUTOMATIC $300
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social -->
+
+  <section id="social">
+    <div class="container wow fadeInUp" data-wow-delay="2s" data-wow-duration="2s">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Connect with us!</h2>
+          <hr style=" text-align:left; width:50%;">
+          <p>21 savage</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="a"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="a"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="a"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="a"><i class="fa fa-pinterest"></i></a></li>
+            <li class="list-inline-item"><a href="a"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="a"><i class="fa fa-rss"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who we are -->
+
+  <section id="who">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2>Who Are We?</h2>
+          <hr text-align="left" width="50%">
+          <p class="lead">We were created and funded by UFC Lightweight and Featherweight Champion, Conor McGregor. We
+            are based off in California and have only been in business for one year. After the success of Conor's Proper
+            Twelve whiskey business, he decided to pursue another passion of his. Proper Twelve has reached over $1
+            Billion in just one year which set a record for highest revenue earned in a single year in the whiskey
+            business. We hope to provide
+            you with the best customer experience and excellent quality of products using the experience gained from the
+            success of his other ventures.
+          </p>
+          <button type="button" class="btn btn-who">Learn More About Us!</button>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="img/conorbelt.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why -->
+
+  <section id="why">
+    <div class="container text-center">
+      <div class="row">
+
+        <div class="col-md-12 wow fadeIn">
+          <h2>Why you should work with us</h2>
+          <hr width="30%">
+          <p>Take me out</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fa fa-thumbs-o-up fa-3x"></i>
+          <h3>Customer satisfaction</h3>
+          <p>gucci gang</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-line-chart fa-3x"></i>
+          <h3>Fantastic</h3>
+          <p>gucci gang</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-trophy fa-3x"></i>
+          <h3>Guareenteed</h3>
+          <p>gucci gang</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h2>Pricing</h2>
+          <hr width="30%">
+          <p>Best prices around town</p>
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header standard">Bronze</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-inline-block"><strong>2 </strong>profiles</li>
+              <li class="list-group-item d-inline-block"><strong>$0 </strong>month</li>
+              <li class="list-group-item d-inline-block"><strong>10GB </strong>storage</li>
+              <li class="list-group-item d-inline-block"><strong>100GB </strong>bandwith</li>
+              <li class="list-group-item d-inline-block"><strong>1 </strong>account</li>
+              <li class="list-group-item d-inline-block"><strong>Website </strong>integration</li>
+              <li class="list-group-item d-inline-block"><strong>Basic </strong>customisation</li>
+              <li class="list-group-item d-inline-block"><strong>Email </strong>email support</li>
+            </ul>
+            <div class="card-block">
+              <button type="button" class="btn btn-outline-info btn-block">Sign up</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">Gold</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-inline-block"><strong>100 </strong>profiles</li>
+              <li class="list-group-item d-inline-block"><strong>$59 </strong>month</li>
+              <li class="list-group-item d-inline-block"><strong>30GB </strong>storage</li>
+              <li class="list-group-item d-inline-block"><strong>200GB </strong>bandwith</li>
+              <li class="list-group-item d-inline-block"><strong>10 </strong>account</li>
+              <li class="list-group-item d-inline-block"><strong>Website </strong>integration</li>
+              <li class="list-group-item d-inline-block"><strong>Advanced </strong>customisation</li>
+              <li class="list-group-item d-inline-block"><strong>Call </strong>email support</li>
+            </ul>
+            <div class="card-block">
+              <button type="button" class="btn btn-outline-info btn-block">Sign up</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header plat">Platninum</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-inline-block"><strong>Unlimited </strong>profiles</li>
+              <li class="list-group-item d-inline-block"><strong>$99 </strong>month</li>
+              <li class="list-group-item d-inline-block"><strong>1TB </strong>storage</li>
+              <li class="list-group-item d-inline-block"><strong>Unlimited </strong>bandwith</li>
+              <li class="list-group-item d-inline-block"><strong>30 </strong>account</li>
+              <li class="list-group-item d-inline-block"><strong>Website </strong>integration</li>
+              <li class="list-group-item d-inline-block"><strong>Advanced </strong>customisation</li>
+              <li class="list-group-item d-inline-block"><strong>24/7 </strong>email support</li>
+            </ul>
+            <div class="card-block">
+              <button type="button" class="btn btn-outline-info btn-block">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container text-center">
+      <div class="row">
+
+        <div class="col">
+          <h2>Contact</h2>
+          <hr width="30%">
+          <p>I got a whole lotta new money</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <form>
+            <fieldset class="form-group"><input type="email" class="form-control form-control-sm" id="email"
+                placeholder="email..."></fieldset>
+            <fieldset class="form-group"><input type="text" class="form-control form-control-sm" id="name"
+                placeholder="name..."></fieldset>
+            <fieldset class="form-group"><input type="text" class="form-control form-control-sm" id="subject"
+                placeholder="subject..."></fieldset>
+
+            <fieldset class="form-group"><textarea class="form-control form-control-sm" id="message"
+                placeholder="message..." rows="3"></textarea></fieldset>
+
+            <button type="submit" class="btn btn-outline-info btn-block">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-8 col-sm-6">
+          <h2>About XL Tech</h2>
+          <p>got money for dayz</p>
+          <p>got too much</p>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="a"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="a"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="a"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="a"><i class="fa fa-pinterest"></i></a></li>
+            <li class="list-inline-item"><a href="a"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="a"><i class="fa fa-rss"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Say hi to the bag for me</h3>
+          <ul class="list-unstyled">
+            <li>
+              <p><strong><i class="fa fa-map-marker"></i>Address to the bag</strong></p>
+            </li>
+            <li>
+              <p><strong><i class="fa fa-envelope"></i>Email</strong></p>
+            </li>
+            <li>
+              <p><strong><i class="fa fa-phone"></i>Phone</strong></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <p>&copy; 2016 Designed by JColefan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
