@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,9 +12,7 @@
   <link rel="stylesheet" href="product.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700&display=swap" rel="stylesheet">
-</head>
-
-<title>Proper Watch</title>
+  <title>Proper Watch</title>
 </head>
 
 <body>
@@ -24,7 +22,8 @@
       <span class="navbar-toggler-icon">&#9776</span>
     </button>
 
-    <a class="navbar-brand" href="a"><img src="img/logo.jpg" width="50px" height="50px" class="img-fluid"></a>
+    <a class="navbar-brand" href="index.html#header"><img src="img/conorlog.jpg" width="50px" height="50px"
+        class="img-fluid"></a>
     <div class="collapse navbar-collapse" id="navigation-bar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="index.html#header">HOME</a></li>
@@ -35,17 +34,19 @@
       </ul>
     </div>
   </nav>
-  </section>
 
   <!-- HEADER -->
   <section id="header">
     <div class="container">
 
-        <div class="col-md-6 header-right hidden-sm-down">
-        </div>
+      <div class="col-md-6 header-right hidden-sm-down">
       </div>
     </div>
+    </div>
   </section>
+
+
+  <!-- Product Page -->
 
   <section id="products">
     <div class="container">
@@ -57,155 +58,194 @@
           <p>To be a champ you have to look like one</p>
         </div>
       </div>
+
+      <!-- Filter -->
+
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('rubber')"> Rubber</button>
+        <button class="btn" onclick="filterSelection('wood')"> Wood</button>
+        <button class="btn" onclick="filterSelection('leather')"> Leather</button>
+        <button class="btn" onclick="filterSelection('steel')"> Steel</button>
+        <button class="btn" onclick="filterSelection('gold')"> Gold</button>
+      </div>
+
+      <!-- Products Layout -->
+
       <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="card filterDiv leather">
+            <div class="item-img">
+              <a href="#a"><img src="img/tissot.png" class="card-img-top img-fluid" alt="tissot"></a>
+              <div class="img-overlay"></div>
+            </div>
+            <div class="card-body">
+              <p class="strong">TISSOT $925</p>
+              <p class="card-text">CHEMIN DES TOURELLES POWERMATIC 80<br>Made with care and genuine leather. It
+                is mechanically powered and holds up to 80 hours of energy.
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <div class="work-img">
-              <a href="a"><img src="img/tissot.png" class="card-img-top img-fluid" alt="building"></a>
-              <div class="img-overlay"></div>
-            </div>
-            <div class="card-body"><strong class="strong">$925</strong>
-              <p class="card-text">TISSOT CHEMIN DES TOURELLES POWERMATIC 80<br>Specs Energy:	Mechanical
-                  </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <div class="work-img">
-              <a href="a"><img src="img/fair.jpg" class="card-img-top img-fluid" alt="building"></a>
+          <div class="card filterDiv rubber">
+            <div class="item-img">
+              <a href="#a"><img src="img/gshock.png" class="card-img-top img-fluid" alt="gshock"></a>
               <div class="img-overlay"></div>
             </div>
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                of the card's content.</p>
+              <p class="strong">G-SHOCK $130</p>
+              <p class="card-text">G-MS MSGC100-7A<br>Great watch for outdoor activity, but still classy enough to
+                integrate with your nice outfits. Made with resin band and is 100 meters water resistant.</p>
             </div>
           </div>
         </div>
+
         <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <div class="work-img">
-              <a href="a"><img src="img/city.jpg" class="card-img-top img-fluid" alt="building"></a>
+          <div class="card filterDiv steel">
+            <div class="item-img">
+              <a href="#a"><img src="img/citizenblack.png" class="card-img-top img-fluid" alt="citizen"></a>
               <div class="img-overlay"></div>
             </div>
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                of the card's content.</p>
+              <p class="strong">CITIZEN $300</p>
+              <p class="card-text">AXIOM AU1065-58G<br>Absolutely stunning in black. Stainless steel band with diamond
+                accents inside the face.</p>
             </div>
           </div>
         </div>
+
         <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <div class="work-img">
-              <a href="a"><img src="img/rose.jpg" class="card-img-top img-fluid" alt="building"></a>
+          <div class="card filterDiv leather">
+            <div class="item-img">
+              <a href="#a"><img src="img/gucci.jpg" class="card-img-top img-fluid" alt="gucci"></a>
               <div class="img-overlay"></div>
             </div>
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                of the card's content.</p>
+              <p class="strong">GUCCI $1,100</p>
+              <p class="card-text">G-Timeless<br>Sleek and stylish. Runs on Ronda quartz movement with a leather
+                strap.
+              </p>
             </div>
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <div class="work-img">
-              <a href="a"><img src="img/skate.jpg" class="card-img-top img-fluid" alt="building"></a>
+          <div class="card filterDiv gold">
+            <div class="item-img">
+              <a href="#a"><img src="img/movado.jpg" class="card-img-top img-fluid" alt="movado"></a>
               <div class="img-overlay"></div>
             </div>
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                of the card's content.</p>
+              <p class="strong">MOVADO $895</p>
+              <p class="card-text">MUSEUM CLASSIC Gold<br>Flashy, but shows class and elegance. Uses Swiss quartz
+                movement and glass is made from sapphire.</p>
             </div>
           </div>
         </div>
+
         <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <div class="work-img">
-              <a href="a"><img src="img/track.jpg" class="card-img-top img-fluid" alt="building"></a>
+          <div class="card filterDiv leather">
+            <div class="item-img">
+              <a href="#a"><img src="img/dw.png" class="card-img-top img-fluid" alt="dw"></a>
               <div class="img-overlay"></div>
             </div>
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                of the card's content.</p>
+              <p class="strong">DANIEL WELLINGTON $200</p>
+              <p class="card-text">Classic Sheffield<br>Black and simple design. Utilizes Japanese quartz movement
+                along with a leather band.</p>
             </div>
           </div>
         </div>
+
         <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <div class="work-img">
-              <a href="a"><img src="img/goldengate.jpg" class="card-img-top img-fluid" alt="building"></a>
+          <div class="card filterDiv wood">
+            <div class="item-img">
+              <a href="#a"><img src="img/wood.jpg" class="card-img-top img-fluid" alt="wood"></a>
               <div class="img-overlay"></div>
             </div>
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                of the card's content.</p>
+              <p class="strong">HOLZKERN $279</p>
+              <p class="card-text">Helix<br>This vibrant and beautiful wooden watch is unique. Made of teak wood and
+                stainless blue steel.</p>
             </div>
           </div>
         </div>
+
         <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <div class="work-img">
-              <a href="a"><img src="img/girl-field.jpg" class="card-img-top img-fluid" alt="building"></a>
+          <div class="card filterDiv steel">
+            <div class="item-img">
+              <a href="#a"><img src="img/bulova.jpeg" class="card-img-top img-fluid" alt="bulova"></a>
               <div class="img-overlay"></div>
             </div>
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                of the card's content.</p>
+              <p class="strong">BULOVA $415</p>
+              <p class="card-text">Swarovski Crystal Gold Stainless Steel<br>Classic Bulova watch. Gold stainless
+                steel band with swarovski crystals around the face.</p>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="row">
         <div class="col-md-3 col-sm-6">
-            <div class="card">
-              <div class="work-img">
-                <a href="a"><img src="img/tissot.png" class="card-img-top img-fluid" alt="building"></a>
-                <div class="img-overlay"></div>
-              </div>
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                  of the card's content.</p>
-              </div>
+          <div class="card filterDiv leather">
+            <div class="item-img">
+              <a href="#a"><img src="img/mvmt.jpg" class="card-img-top img-fluid" alt="mvmt"></a>
+              <div class="img-overlay"></div>
+            </div>
+            <div class="card-body">
+              <p class="strong">MVMT $95</p>
+              <p class="card-text">45 MM Men's Analog Minimalist<br>Glass case made of hardened mineral crystal for
+                enhanced durability.</p>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <div class="work-img">
-                  <a href="a"><img src="img/tissot.png" class="card-img-top img-fluid" alt="building"></a>
-                  <div class="img-overlay"></div>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                    of the card's content.</p>
-                </div>
-              </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card filterDiv rubber">
+            <div class="item-img">
+              <a href="#a"><img src="img/seiko.jpg" class="card-img-top img-fluid" alt="seiko"></a>
+              <div class="img-overlay"></div>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="card">
-                  <div class="work-img">
-                    <a href="a"><img src="img/tissot.png" class="card-img-top img-fluid" alt="building"></a>
-                    <div class="img-overlay"></div>
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                      of the card's content.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="card">
-                    <div class="work-img">
-                      <a href="a"><img src="img/tissot.png" class="card-img-top img-fluid" alt="building"></a>
-                      <div class="img-overlay"></div>
-                    </div>
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                        of the card's content.</p>
-                    </div>
-                  </div>
-                </div>
-                
+            <div class="card-body">
+              <p class="strong">SEIKO $500</p>
+              <p class="card-text">Velatura Sports Chronograph<br>Made with rose gold plating. Chronograph
+                and uses japanese quartz movement.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card filterDiv steel">
+            <div class="item-img">
+              <a href="#a"><img src="img/tag.jpg" class="card-img-top img-fluid" alt="tagheuer"></a>
+              <div class="img-overlay"></div>
+            </div>
+            <div class="card-body">
+              <p class="strong">TAG HEUER $1,950</p>
+              <p class="card-text">WAZ1120.BB0879 'Formula 1' Two-Tone Stainless Steel<br>Stay classy with this Tag
+                Heuer. Uses Swiss quartz movement and dial is made of sapphire.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card filterDiv gold">
+            <div class="item-img">
+              <a href="#a"><img src="img/greenrolex.webp" class="card-img-top img-fluid" alt="rolex2"></a>
+              <div class="img-overlay"></div>
+            </div>
+            <div class="card-body">
+              <p class="strong">ROLEX $35,000</p>
+              <p class="card-text">COSMOGRAPH DAYTONA<br>One of Conor McGregor's favorites. Classic stainless steel
+                18k gold. Uses automatic movement.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -213,60 +253,102 @@
   <!-- Footer -->
 
   <section id="footer">
-      <div class="container">
-  
-        <div class="row">
-          <div class="col-md-8 col-sm-6">
-            <h2>About XL Tech</h2>
-            <p>got money for dayz</p>
-            <p>got too much</p>
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="a"><i class="fa fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="a"><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="a"><i class="fa fa-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="a"><i class="fa fa-pinterest"></i></a></li>
-              <li class="list-inline-item"><a href="a"><i class="fa fa-google-plus"></i></a></li>
-              <li class="list-inline-item"><a href="a"><i class="fa fa-rss"></i></a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3>Say hi to the bag for me</h3>
-            <ul class="list-unstyled">
-              <li>
-                <p><strong><i class="fa fa-map-marker"></i>Address to the bag</strong></p>
-              </li>
-              <li>
-                <p><strong><i class="fa fa-envelope"></i>Email</strong></p>
-              </li>
-              <li>
-                <p><strong><i class="fa fa-phone"></i>Phone</strong></p>
-              </li>
-            </ul>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6">
+          <h2>Proper Watch</h2>
+          <p>We have our social media outlets here if you want to follow us for future updates we do!</p>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#a"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#a"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#a"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#a"><i class="fa fa-pinterest"></i></a></li>
+            <li class="list-inline-item"><a href="#a"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="#a"><i class="fa fa-rss"></i></a></li>
+          </ul>
         </div>
-  
-        <div class="row">
-          <div class="col-md-12">
-            <p>&copy; 2016 Designed by JColefan</p>
-          </div>
+        <div class="col-md-4">
+          <h3>Reach Out To Us!</h3>
+          <ul class="list-unstyled">
+            <li>
+              <p><strong><i class="fa fa-map-marker"></i>36 Hillcrest St.
+                  Ontario, CA 91761</strong></p>
+            </li>
+            <li>
+              <p><strong><i class="fa fa-envelope"></i>propermail@hotmail.com</strong></p>
+            </li>
+            <li>
+              <p><strong><i class="fa fa-phone"></i>310-432-3444</strong></p>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
 
-
-
-
-
-
-
-
-
-
+      <div class="row">
+        <div class="col-md-12">
+          <p>&copy; 2019 Designed by Brian Shin</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Optional JavaScript -->
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script>
+    filterSelection("all")
+
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
   </script>
 </body>
 
