@@ -52,7 +52,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-md-12">
+        <div class="col-md-12 text-center">
           <h2>Strut Out In Our Proper Watches</h2>
           <hr text-align="left" width="50%">
           <p>To be a champ you have to look like one</p>
@@ -69,12 +69,20 @@
         <button class="btn" onclick="filterSelection('steel')"> Steel</button>
         <button class="btn" onclick="filterSelection('gold')"> Gold</button>
       </div>
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> All Prices</button>
+        <button class="btn" onclick="filterSelection('199')"> $0-$199</button>
+        <button class="btn" onclick="filterSelection('399')"> $200-$399</button>
+        <button class="btn" onclick="filterSelection('599')"> $400-$599</button>
+        <button class="btn" onclick="filterSelection('799')"> $600-$799</button>
+        <button class="btn" onclick="filterSelection('800')"> $800-$40,000</button>
+      </div>
 
       <!-- Products Layout -->
 
       <div class="row">
         <div class="col-md-3 col-sm-6">
-          <div class="card filterDiv leather">
+          <div class="card filterDiv leather 800">
             <div class="item-img">
               <a href="#a"><img src="img/tissot.png" class="card-img-top img-fluid" alt="tissot"></a>
               <div class="img-overlay"></div>
@@ -89,7 +97,7 @@
         </div>
 
         <div class="col-md-3 col-sm-6">
-          <div class="card filterDiv rubber">
+          <div class="card filterDiv rubber 199">
             <div class="item-img">
               <a href="#a"><img src="img/gshock.png" class="card-img-top img-fluid" alt="gshock"></a>
               <div class="img-overlay"></div>
@@ -103,7 +111,7 @@
         </div>
 
         <div class="col-md-3 col-sm-6">
-          <div class="card filterDiv steel">
+          <div class="card filterDiv steel 399">
             <div class="item-img">
               <a href="#a"><img src="img/citizenblack.png" class="card-img-top img-fluid" alt="citizen"></a>
               <div class="img-overlay"></div>
@@ -117,7 +125,7 @@
         </div>
 
         <div class="col-md-3 col-sm-6">
-          <div class="card filterDiv leather">
+          <div class="card filterDiv leather 800">
             <div class="item-img">
               <a href="#a"><img src="img/gucci.jpg" class="card-img-top img-fluid" alt="gucci"></a>
               <div class="img-overlay"></div>
@@ -134,7 +142,7 @@
 
       <div class="row">
         <div class="col-md-3 col-sm-6">
-          <div class="card filterDiv gold">
+          <div class="card filterDiv gold 800">
             <div class="item-img">
               <a href="#a"><img src="img/movado.jpg" class="card-img-top img-fluid" alt="movado"></a>
               <div class="img-overlay"></div>
@@ -148,7 +156,7 @@
         </div>
 
         <div class="col-md-3 col-sm-6">
-          <div class="card filterDiv leather">
+          <div class="card filterDiv leather 399">
             <div class="item-img">
               <a href="#a"><img src="img/dw.png" class="card-img-top img-fluid" alt="dw"></a>
               <div class="img-overlay"></div>
@@ -162,7 +170,7 @@
         </div>
 
         <div class="col-md-3 col-sm-6">
-          <div class="card filterDiv wood">
+          <div class="card filterDiv wood 399">
             <div class="item-img">
               <a href="#a"><img src="img/wood.jpg" class="card-img-top img-fluid" alt="wood"></a>
               <div class="img-overlay"></div>
@@ -176,7 +184,7 @@
         </div>
 
         <div class="col-md-3 col-sm-6">
-          <div class="card filterDiv steel">
+          <div class="card filterDiv steel 599">
             <div class="item-img">
               <a href="#a"><img src="img/bulova.jpeg" class="card-img-top img-fluid" alt="bulova"></a>
               <div class="img-overlay"></div>
@@ -192,7 +200,7 @@
 
       <div class="row">
         <div class="col-md-3 col-sm-6">
-          <div class="card filterDiv leather">
+          <div class="card filterDiv leather 199">
             <div class="item-img">
               <a href="#a"><img src="img/mvmt.jpg" class="card-img-top img-fluid" alt="mvmt"></a>
               <div class="img-overlay"></div>
@@ -206,7 +214,7 @@
         </div>
 
         <div class="col-md-3 col-sm-6">
-          <div class="card filterDiv rubber">
+          <div class="card filterDiv rubber 599">
             <div class="item-img">
               <a href="#a"><img src="img/seiko.jpg" class="card-img-top img-fluid" alt="seiko"></a>
               <div class="img-overlay"></div>
@@ -220,7 +228,7 @@
         </div>
 
         <div class="col-md-3 col-sm-6">
-          <div class="card filterDiv steel">
+          <div class="card filterDiv steel 800">
             <div class="item-img">
               <a href="#a"><img src="img/tag.jpg" class="card-img-top img-fluid" alt="tagheuer"></a>
               <div class="img-overlay"></div>
@@ -234,7 +242,7 @@
         </div>
 
         <div class="col-md-3 col-sm-6">
-          <div class="card filterDiv gold">
+          <div class="card filterDiv gold 800">
             <div class="item-img">
               <a href="#a"><img src="img/greenrolex.webp" class="card-img-top img-fluid" alt="rolex2"></a>
               <div class="img-overlay"></div>
